@@ -1,0 +1,20 @@
+Resource groups
+- We were unable to create a RG manually in portal
+  - Is this due to naming convention policy?
+  - Are users blocked from creating them? Why?
+  - Will terraform be able to create them?
+  - Should we just use the existing ones?
+  ** We will just use core to get on
+  - import the existing resource using "terraform import azurerm_resource_group.core RESOURCE ID"
+
+AZ CLI implicitly logged in
+- terraform is scoped to subscription / tenant of the signed in az cli user
+
+App Service Plan
+- dev sub: works OK (with az cli logged in as RK)
+- prod sub: In progress
+  - Needs PIM ????
+  - Look at using a managed identity
+    - Role assignment button disabled in portal
+
+
